@@ -1,12 +1,22 @@
 import React from 'react';
 import '.././App.css';
 import Logo from '.././assets/logo.svg';
+import Button from './Button.js';
 
 function Header() {
+
+    /* onClick Statements */
+    const handleClick1 = () => {
+        console.log('Button one clicked!')
+    }
+
   return (
     <div className="background-header" id="home">
+
             <h1 className="header-title">Habit Hive Wellness Co.</h1>
+
             <img src={Logo} alt="Happy Hive Wellness Co. Logo" className="logo header-logo"></img>
+
             <div>
                 <nav className="nav-bar">
                     <ul className="unordered-nav-li">
@@ -17,6 +27,11 @@ function Header() {
                     </ul>
                 </nav>
             </div>
+
+            <div>
+                 <Button className="golden-right" text="Let's Work!" onClick={handleClick1}/>
+            </div>
+
         <div className="background-hero"> </div>
     </div>
   );

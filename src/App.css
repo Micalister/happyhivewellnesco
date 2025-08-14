@@ -20,6 +20,56 @@ ul, li {
   list-style: none;
 }
 
+button {
+  font-family: var(--header-font);
+  font-size: var(--button-text);
+  padding: 1.6rem 1rem;
+  background: none;
+  border: none;
+}
+
+/* move to global variables for the buttons */
+.golden-right {
+  background: url('./assets/button-background.svg');
+  border: 1px solid var(--secondary-color);
+  color: transparent;
+  font-weight: 500;
+  float: right;
+  transform: translateY(46rem) translateX(-28rem);
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+.golden-right::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24.5rem;
+  height: 7.8rem;
+  border: 0.1rem solid var(--secondary-color);
+  transform: translateY(-4rem) translateX(-3rem);
+  z-index: -10;
+  overflow: hidden; 
+}
+
+.golden-right::after {
+  content: "Lets Work!";
+  color: var(--main-color);
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 24.5rem;
+  /*height: 7.8rem;*/
+  padding: 1.5rem 0rem 1.5rem 0rem;
+  background-color: #FEF587;
+  border: 0.1rem solid var(--secondary-color);
+  transform: translateY(-10rem) translateX(-5rem);
+  z-index: -2;
+}
+
+/* **************************************** */
+
 /* Global Variables */
 :root {
   /* Colors */
@@ -30,13 +80,17 @@ ul, li {
 
   /* Header Font */
   --header-font: "acier-bat-gris", sans-serif;
-  --header-size: 8.5rem;
+  --header-size: 9rem;
+  --sub-head-size: 6.5rem;
 
   /* Text Font */
   --text-font: "modern-love-caps", serif;
 
   /* Nav Bar a */
   --a-size: 3rem;
+
+  /* Button Text Size */
+  --button-text: 4.25rem;
 }
 
 /* Global Classes */
@@ -80,7 +134,7 @@ ul, li {
 .header-title {
   text-align: left;
   float: right;
-  margin: 1% 10% 0 0;
+  margin: 2.2% 10% 0 0;
 }
 
 .header-title::after {
@@ -107,7 +161,7 @@ ul, li {
 .nav-bar {
   float: right;
   width: 10rem;
-  transform: translateY(14rem) translateX(-1rem);
+  transform: translateY(25rem) translateX(-1.2rem);
 }
 
 .unordered-nav-li {
@@ -118,7 +172,7 @@ ul, li {
 }
 
 .unordered-nav-li, li {
-  margin: 0 1rem 0 4rem;
+  margin: 0 6rem;
 }
 
 .nav-list-item {
@@ -126,7 +180,17 @@ ul, li {
   font-size: var(--a-size);
   width: 10rem;
   white-space: nowrap;
-  color: var(--secondary-color)
+  color: var(--secondary-color);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s ease, text-underline-offset 0.3s ease;
+  text-underline-offset: 0.1em;
+}
+
+.nav-list-item:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
 }
 
 #home {
