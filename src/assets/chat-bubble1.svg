@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140.595" height="130" viewBox="0 0 1140.595 130">
+  <g id="Group_153" data-name="Group 153" transform="translate(-511.405 -458)">
+    <g id="Rectangle_95" data-name="Rectangle 95" transform="translate(569 458)" fill="#fff" stroke="#000" stroke-width="3">
+      <rect width="1083" height="130" rx="65" stroke="none"/>
+      <rect x="1.5" y="1.5" width="1080" height="127" rx="63.5" fill="none"/>
+    </g>
+    <g id="Group_152" data-name="Group 152">
+      <g id="Polygon_7" data-name="Polygon 7" transform="matrix(0.208, -0.978, 0.978, 0.208, 511.405, 522.016)" fill="#fff">
+        <path d="M 50.02687454223633 61.5 L 2.246264457702637 61.5 L 26.13656997680664 3.914431095123291 L 50.02687454223633 61.5 Z" stroke="none"/>
+        <path d="M 26.13656997680664 7.828853607177734 L 4.492527008056641 60 L 47.78061294555664 60 L 26.13656997680664 7.828853607177734 M 26.13656997680664 0 L 52.27313613891602 63 L 3.814697265625e-06 63 L 26.13656997680664 0 Z" stroke="none" fill="#000"/>
+      </g>
+      <path id="Polygon_4" data-name="Polygon 4" d="M27.509,0,55.018,64.446H0Z" transform="matrix(0.208, -0.978, 0.978, 0.208, 519.357, 524.855)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

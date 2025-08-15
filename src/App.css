@@ -12,6 +12,11 @@ h1 {
   font-size: var(--header-size);
 }
 
+p {
+  font-family: var(--text-font);
+  font-size: var(--text-size);
+}
+
 a {
   text-decoration: none;
 }
@@ -39,6 +44,7 @@ button {
   z-index: 1;
   position: relative;
   cursor: pointer;
+  transition: transform .5s ease;
 }
 
 .golden-right::before {
@@ -48,9 +54,10 @@ button {
   width: 24.5rem;
   height: 7.8rem;
   border: 0.1rem solid var(--secondary-color);
-  transform: translateY(-4rem) translateX(-3rem);
+  transform: translateY(-3.5rem) translateX(-3rem);
   z-index: -10;
   overflow: hidden; 
+  transition: transform .5s ease;
 }
 
 .golden-right::after {
@@ -64,8 +71,51 @@ button {
   padding: 1.5rem 0rem 1.5rem 0rem;
   background-color: #FEF587;
   border: 0.1rem solid var(--secondary-color);
-  transform: translateY(-10rem) translateX(-5rem);
+  transform: translateY(-9.2rem) translateX(-4.5rem);
   z-index: -2;
+  transition: transform .5s ease;
+}
+
+.golden-right-active {
+  background: url('./assets/button-background.svg');
+  border: 1px solid var(--secondary-color);
+  color: transparent;
+  font-weight: 500;
+  float: right;
+  transform: translateY(46rem) translateX(-28rem);
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  transition: transform .5s ease;
+}
+
+.golden-right-active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24.5rem;
+  height: 7.8rem;
+  border: 0.1rem solid var(--secondary-color);
+  transform: translateY(-1.8rem) translateX(-1.25rem);
+  z-index: -10;
+  overflow: hidden; 
+  transition: transform .5s ease;
+}
+
+.golden-right-active::after {
+  content: "Lets Work!";
+  color: var(--main-color);
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 24.5rem;
+  /*height: 7.8rem;*/
+  padding: 1.5rem 0rem 1.5rem 0rem;
+  background-color: var(--secondary-color);
+  border: 0.1rem solid var(--secondary-color);
+  transform: translateY(-6rem) translateX(-1.2rem);
+  z-index: -2;
+  transition: transform .5s ease;
 }
 
 /* **************************************** */
@@ -85,6 +135,7 @@ button {
 
   /* Text Font */
   --text-font: "modern-love-caps", serif;
+  --text-size: 2.3rem;
 
   /* Nav Bar a */
   --a-size: 3rem;
@@ -100,7 +151,7 @@ button {
 
 .app-wrapper {
   max-width: 1920px;
-  /*overflow-x: hidden;*/
+  overflow: hidden;
 }
 
 /* Header.js */
@@ -160,8 +211,8 @@ button {
 
 .nav-bar {
   float: right;
-  width: 10rem;
-  transform: translateY(25rem) translateX(-1.2rem);
+  width: 0rem;
+  transform: translateY(25rem) translateX(-13rem);
 }
 
 .unordered-nav-li {
@@ -194,14 +245,43 @@ button {
 }
 
 #home {
+  
+}
+
+#home-active {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 5px;
 }
 
-/* Testing blocks */
-p {
-  color: var(--secondary-color);
-  font-family: var(--text-font);
-  font-weight: 400;
+/* Header Content */
+
+.header-content {
+  
 }
+
+.hero-image-container {
+
+}
+
+.hero-image {
+  width: 73rem;
+  transform: translateY(-3rem) translateX(4.5rem) rotate(-2deg);
+}
+
+.hero-text-container {
+  width: 80rem;
+}
+
+.chat-bubble1 {
+  width: 100%;
+  transform: translateY(-44rem) translateX(42rem);
+}
+
+.hero-text {
+  position: relative;
+  padding: 1rem;
+  transform: translateY(-52.5rem) translateX(47rem); 
+}
+
+
