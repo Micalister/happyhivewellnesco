@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import '.././App.css';
+/* SVG assets */
 import Logo from '.././assets/logo.svg';
 import Hero from '.././assets/hero.svg';
 import Bubble1 from '.././assets/chat-bubble1.svg';
+import HeroBee from '.././assets/HeroBee.svg';
+import Arrow from '.././assets/Arrow.svg';
+
+/* Components */
 import Button from './Button.js';
+import HeroTypeWritter from './HeroTypeWritter.js';
 
 function Header() {
 
@@ -48,9 +54,10 @@ function Header() {
                 </div>
                 <div className="hero-text-container">
                     <img className="chat-bubble1" src={Bubble1} alt="chat-bubble1"></img>
-                    <p className="hero-text">Hi, I’m Capreesa! I’m passionate about helping busy women create sustainable fitness and wellness habits that fit into their lives, not take over them.</p>
+                    <HeroTypeWritter/>
                 </div>
-            
+            <img className="HeroBee" src={HeroBee} alt="side bee"/>
+            <img className="hero-arrow" src={Arrow} alt="side bee"/>
 
         <div className="background-hero"> </div>
     </div>

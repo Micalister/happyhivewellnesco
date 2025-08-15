@@ -40,7 +40,7 @@ button {
   color: transparent;
   font-weight: 500;
   float: right;
-  transform: translateY(46rem) translateX(-28rem);
+  transform: translateY(42rem) translateX(-34rem);
   z-index: 1;
   position: relative;
   cursor: pointer;
@@ -82,7 +82,7 @@ button {
   color: transparent;
   font-weight: 500;
   float: right;
-  transform: translateY(46rem) translateX(-28rem);
+  transform: translateY(42rem) translateX(-34rem);
   z-index: 1;
   position: relative;
   cursor: pointer;
@@ -279,9 +279,24 @@ button {
 }
 
 .hero-text {
-  position: relative;
+  position: absolute;
   padding: 1rem;
   transform: translateY(-52.5rem) translateX(47rem); 
+  font-family: var(--text-font);
+  font-size: var(--text-size) !important;
+  max-width: 74rem;
+}
+
+.HeroBee {
+  float: right;
+  transform: translateY(-32rem);
+  width: 30rem;
+}
+
+.hero-arrow {
+  float: right;
+  transform: translateY(-19rem) translateX(20rem);
+  width: 20rem;
 }
 
 
