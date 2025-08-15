@@ -281,7 +281,7 @@ button {
 .hero-text {
   position: absolute;
   padding: 1rem;
-  transform: translateY(-52.5rem) translateX(47rem); 
+  transform: translateY(-53.5rem) translateX(47rem); 
   font-family: var(--text-font);
   font-size: var(--text-size) !important;
   max-width: 74rem;
@@ -298,5 +298,42 @@ button {
   transform: translateY(-19rem) translateX(20rem);
   width: 20rem;
 }
+
+/* Carousel.js */
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  width: 2rem;
+  align-items: center;
+  float: right;
+  transform: translateY(10rem) translateX(40rem);
+}
+
+.carousel, svg {
+  
+}
+
+.arrow-up {
+  width: 3rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.arrow-down {
+  width: 3rem;
+  margin: 0.5rem 0 0 0;
+}
+
+.carousel-hex {
+  width: 4rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.carousel-hex-active {
+  
+}
+
+/* AboutMe.js */
+
 
 
