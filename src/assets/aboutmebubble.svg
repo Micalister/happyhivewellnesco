@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1167.008" height="1256.889" viewBox="0 0 1167.008 1256.889">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_206" data-name="Path 206" d="M0,0,1036.169-12.885,1020.11,1127.449-16.059,1140.334Z" fill="#fff" stroke="#000" stroke-width="3"/>
+    </clipPath>
+  </defs>
+  <g id="Group_150" data-name="Group 150" transform="translate(-230.992 -1116.594)">
+    <g id="Polygon_6" data-name="Polygon 6" transform="translate(1239 2036)" fill="#fff">
+      <path d="M 116.0583038330078 80.5 L 2.941695213317871 80.5 L 59.5 2.554100751876831 L 116.0583038330078 80.5 Z" stroke="none"/>
+      <path d="M 59.5 5.108200073242188 L 5.883392333984375 79 L 113.1166076660156 79 L 59.5 5.108200073242188 M 59.5 0 L 119 82 L 0 82 L 59.5 0 Z" stroke="none" fill="#000"/>
+    </g>
+    <g id="Group_149" data-name="Group 149" transform="matrix(0.995, 0.105, -0.105, 0.995, 366.16, 1131.087)">
+      <g id="Group_148" data-name="Group 148" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Path_205" data-name="Path 205" d="M989.9,702.553c-7.548-15.853-15.243-31.753-22.161-48-24.081-56.463-26.549-117.3-26.343-177.633.3-82.82,4.731-168.968-32.776-243.968C843.168,102,729.107,28.15,578.509.806,402.2-31.231,179.472,49.99,90.517,188.047,3.272,323.406-24.559,484.939,2.81,635.4c38.13,209.461,185.947,415.953,425.33,477.752C606.82,1159.292,824.1,1125.833,954,995.135c89.193-89.733,84.244-191.029,35.9-292.581" transform="translate(0 0)" fill="#fff" stroke="#000" stroke-width="3"/>
+      </g>
+    </g>
+    <path id="Polygon_5" data-name="Polygon 5" d="M51.5,0,103,78H0Z" transform="translate(1244 2037)" fill="#fff"/>
+  </g>
+</svg>

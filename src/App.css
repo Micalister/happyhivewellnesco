@@ -281,7 +281,7 @@ button {
 .hero-text {
   position: absolute;
   padding: 1rem;
-  transform: translateY(-53.5rem) translateX(47rem); 
+  transform: translateY(-52.5rem) translateX(47rem); 
   font-family: var(--text-font);
   font-size: var(--text-size) !important;
   max-width: 74rem;
@@ -316,24 +316,91 @@ button {
 
 .arrow-up {
   width: 3rem;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0rem 0;
+  transform: translateY(1.3rem);
 }
 
 .arrow-down {
   width: 3rem;
-  margin: 0.5rem 0 0 0;
+  margin: 0rem 0 0 0;
+  transform: translateY(-2.5rem);
 }
 
 .carousel-hex {
   width: 4rem;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0rem 0;
 }
 
 .carousel-hex-active {
-  
+ 
+}
+
+.active-path {
+  fill: var(--secondary-color);
+  width: 10%;
+}
+
+.inactive-path {
+  fill: var(--main-color);
+}
+
+.test-act {
+  display: contents;
+}
+
+.test-inc {
+  display: none;
+}
+
+/* AboutMe Carousel index 1 */
+
+.about-me-content {
+  content: "";
+  max-width: 60%;
+  background: url(./assets/aboutmebubble.svg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(4rem) translateX(24rem);
+}
+
+.about-me-content-text {
+  transform: translateY(16rem) translateX(18rem);
+  width: 50rem;
+}
+
+.about-me-title {
+  float: right;
+  transform: translateY(-50rem) translateX(13rem) rotate(-90deg);
+  color: var(--main-color) !important;
 }
 
 /* AboutMe.js */
 
+.about-me-hex-left {
+  content: '';
+  background: url(./assets/AboutMeLeft.svg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-me-hex-left-right {
+  content: '';
+  position: absolute;
+  right: -18rem;
+  background: url(./assets/AboutToPlans.svg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(0.75) translateY(-28rem);
+}
+
+.aboutcapressa {
+  transform: translateY(-17rem) translateX(78rem);
+}
 
 
