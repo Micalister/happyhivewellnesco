@@ -15,7 +15,7 @@ function AboutMe() {
 
             {/*<img src={AboutToPlans} alt="background Hexagons"></img>*/}
             <div className="about-me-hex-left-right">
-                <img className="aboutcapressa" src={aboutcapressa} alt="background Hexagons"></img>
+                <img className="aboutcapressa" src={aboutcapressa} alt="Capressa explaining her about me section"></img>
             </div>
         </div>        
     )

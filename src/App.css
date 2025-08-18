@@ -12,6 +12,15 @@ h1 {
   font-size: var(--header-size);
 }
 
+h3 {
+  color: #000;
+  font-family: var(--header-font);
+  font-weight: 400;
+  font-size: 4.5rem;
+  margin: 10rem 0 4rem 0;
+  transform: translateY(-1rem);
+}
+
 p {
   font-family: var(--text-font);
   font-size: var(--text-size);
@@ -132,6 +141,7 @@ button {
   --header-font: "acier-bat-gris", sans-serif;
   --header-size: 9rem;
   --sub-head-size: 6.5rem;
+  --plans-size: 15rem;
 
   /* Text Font */
   --text-font: "modern-love-caps", serif;
@@ -151,7 +161,7 @@ button {
 
 .app-wrapper {
   max-width: 1920px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 /* Header.js */
@@ -372,7 +382,7 @@ button {
 
 .about-me-title {
   float: right;
-  transform: translateY(-50rem) translateX(13rem) rotate(-90deg);
+  transform: translateY(-50rem) translateX(11.5rem) rotate(-90deg);
   color: var(--main-color) !important;
 }
 
@@ -403,4 +413,105 @@ button {
   transform: translateY(-17rem) translateX(78rem);
 }
 
+/* The Plans */
 
+#plans-section {
+  
+}
+
+.plans-title {
+  position: absolute;
+  right: 5rem;
+  transform: translateY(38rem);
+  font-size: var(--plans-size);
+}
+
+.plans-bee {
+  position: absolute;
+  right: 79rem;
+  transform: translateY(49rem);
+}
+
+.plans-arrow {
+  transform: scaleX(-1) rotate(90deg) translateY(10rem) translateX(29rem);
+}
+
+.plans-background {
+  position: absolute;
+  width: 134rem;
+  z-index: -1000;
+  transform: translateY(80rem);
+}
+
+.plans-container {
+  transform: translateY(40rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10rem 8rem;
+  gap: 5rem
+}
+
+.plans-container-child {
+  background-color: #fff;
+  border: .5rem solid var(--main-color);
+  margin: 0 0rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.bee-icon{
+  width: 10rem;
+}
+
+ .bee-background {
+  content: "";
+  width: 14rem;
+  height: 14rem;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+ }
+
+ .plans-bump {
+  transform: translateY(-27rem);
+ }
+
+ .plans-text {
+  font-size: 1.8rem;
+  text-align: left;
+  margin-bottom: 4rem;
+  transform: translateY(-1rem);
+ }
+
+ .plans-button {
+  font-family: var(--text-font);
+  font-size: 1.8rem;
+  color: var(--main-color);
+  text-decoration: underline;
+  position: absolute;
+  transform: translateY(25rem) translateX(10rem);
+ }
+
+ .plans-button::before {
+  content: "";
+  background: url(./assets/plans-button-arrow.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+  transform: translateY(1rem) translateX(13rem);
+ }
+
+ .plans-hero-bee {
+  position: absolute;
+  right: 0;
+  transform: translateY(40rem);
+  overflow: hidden;
+ }
