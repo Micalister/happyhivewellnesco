@@ -28,6 +28,8 @@ p {
 
 a {
   text-decoration: none;
+  behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 ul, li {
@@ -373,6 +375,7 @@ button {
   background-repeat: no-repeat;
   background-size: contain;
   transform: translateY(4rem) translateX(24rem);
+  z-index: 10000;
 }
 
 .about-me-content-text {
@@ -387,6 +390,21 @@ button {
 }
 
 /* AboutMe.js */
+
+/*.about-me-hex-left {
+  position: absolute;
+  height: 120rem;
+  z-index: -1000;
+  left: 0;
+  transform: translateY(-85rem);
+}
+
+.about-me-hex-right {
+  position: absolute;
+  width: 134rem;
+  z-index: -1000;
+  right: 0;
+}*/
 
 .about-me-hex-left {
   content: '';
@@ -495,7 +513,8 @@ button {
   color: var(--main-color);
   text-decoration: underline;
   position: absolute;
-  transform: translateY(25rem) translateX(10rem);
+  transform: translateY(23rem) translateX(10rem);
+  cursor: pointer;
  }
 
  .plans-button::before {
@@ -514,4 +533,67 @@ button {
   right: 0;
   transform: translateY(40rem);
   overflow: hidden;
+ }
+
+ /* Contact */
+
+ #contact {
+  display: flex;
+  justify-content: center;
+ }
+
+ .contact-background {
+  position: absolute;
+  width: 100vw;
+  transform: translateY(60rem);
+  z-index: -1000;
+ }
+
+ .contact-card {
+  content: '';
+  width: 86rem;
+  height: 95rem;
+  background-color: #fff;
+  border: 0.5rem solid var(--main-color);
+  display: flex;
+  justify-content: center;
+  transform: translateY(99rem);
+ }
+
+ /* Footer */
+
+ #footer {
+  transform: translateY(170rem);
+ }
+
+ .footer-background {
+  width: 100vw;
+ }
+
+ .footer-logo {
+  position: absolute;
+  width: 18rem;
+  transform: translateY(9rem) translateX(18rem);
+ }
+
+ .footer-grid {
+  display: flex;
+  right: 0;
+  transform: translateY(8rem);
+  gap: 3rem;
+  position: absolute;
+  margin: 0 7rem;
+ }
+
+ .footer-grid-element {
+  transform: translateY(10rem);
+  
+ }
+
+ .footer-card {
+  content: "";
+  background-color: #fff;
+  border: 0.5rem solid var(--main-color);
+  width: 45rem;
+  height: 47rem;
  }

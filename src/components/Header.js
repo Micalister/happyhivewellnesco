@@ -21,7 +21,6 @@ function Header() {
     setTimeout(() => {
         setIsActive(prevState => !prevState); // Toggle it back after 1 second
     }, 1000);
-        console.log(isActive);
     };
 
   return (
@@ -44,7 +43,7 @@ function Header() {
 
             {/*Call to Action Button*/}
             <div>
-                 <Button className={isActive ? 'golden-right-active' : 'golden-right'} text="Let's Work!" onClick={handleClick1}/>
+                 <a href="#plans-section"><Button className={isActive ? 'golden-right-active' : 'golden-right'} text="Let's Work!" onClick={handleClick1}/></a>
             </div>
 
             {/*Header Content*/}
