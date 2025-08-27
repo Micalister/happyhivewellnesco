@@ -162,7 +162,7 @@ button {
 }
 
 .app-wrapper {
-  max-width: 1920px;
+  /*max-width: 1920px;*/
   /*overflow: hidden;*/
 }
 
@@ -290,6 +290,10 @@ button {
   transform: translateY(-44rem) translateX(42rem);
 }
 
+.chat-bubble2{
+  display: none;
+}
+
 .hero-text {
   position: absolute;
   padding: 1rem;
@@ -320,10 +324,6 @@ button {
   align-items: center;
   float: right;
   transform: translateY(10rem) translateX(40rem);
-}
-
-.carousel, svg {
-  
 }
 
 .arrow-up {
@@ -597,3 +597,196 @@ button {
   width: 45rem;
   height: 47rem;
  }
+
+ /**********************************************************/
+ /* Media Queries */
+
+ /* mobile */
+ @media (max-width: 500px){
+
+  .app-wrapper{
+    
+  }
+
+  /* mobile root */
+  :root {
+
+  /* Header Font */
+  --header-font: "acier-bat-gris", sans-serif;
+  --header-size: 5rem;
+  --sub-head-size: 6.5rem;
+  --plans-size: 15rem;
+
+  /* Text Font */
+  --text-font: "modern-love-caps", serif;
+  --text-size: 2rem;
+
+  /* Nav Bar a */
+  --a-size: 3rem;
+
+  /* Button Text Size */
+  --button-text: 4.25rem;
+}
+
+/* Global Classes */
+.logo {
+  width: 10rem;
+}
+  
+  /* Header.js */
+  .header-title::after {
+    display: none;
+  }
+
+  .background-hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 270%, -8% 0%) !important;
+  }
+
+.header-title {
+    text-align: center;
+    margin: 12rem 0 0 0rem;
+  }
+
+  .header-logo {
+  margin: 2% 0 0 %;
+  position: absolute;
+}
+
+/* Header Content */
+
+.chat-bubble1 {
+  display: none;
+}
+
+.chat-bubble2 {
+  display: block;
+  transform: translateY(-36rem) translateX(6rem);
+}
+
+.hero-text {
+  max-width: 26rem;
+  transform: translateY(-58rem) translateX(10rem) !important;
+}
+
+.hero-text-container {
+  width: inherit
+}
+
+.hero-image {
+    width: 37rem;
+    transform: translateY(20rem) translateX(1rem) rotate(-2deg);
+  }
+
+  .HeroBee {
+    width: 16rem;
+    transform: translateY(-24rem) translateX(0rem);
+    overflow: hidden;
+  }
+
+  .hero-arrow {
+    transform: translateY(-4rem) translateX(14rem);
+  width: 16rem;
+  }
+
+  /* golden right button */
+
+  .golden-right {
+    transform: translateY(32rem) translateX(-1rem);
+    width: 16rem;
+    height: 5rem;
+  }
+
+  .golden-right::before {
+    width: 16rem;
+    height: 5rem;
+    transform: translateY(-3rem) translateX(-3rem);
+  }
+
+  .golden-right::after { 
+    font-size: 3rem;
+    white-space: nowrap; 
+    width: 16rem;
+    transform: translateY(-13.2rem) translateX(-5rem);
+    padding: 1rem .4rem 1rem .4rem;
+  }
+
+  .golden-right-active {
+    transform: translateY(32rem) translateX(-1rem);
+    width: 16rem;
+    height: 5rem;
+  }
+
+  .golden-right-active::before {
+    width: 16rem;
+    height: 5rem;
+    transform: translateY(-1.6rem) translateX(-1rem);
+  }
+
+  .golden-right-active::after {
+    font-size: 3rem;
+    white-space: nowrap; 
+    width: 16rem;
+    transform: translateY(-10.8rem) translateX(-1.5rem);
+    padding: 1rem .4rem 1rem .4rem;
+  }
+
+  /* Header.js || Header Nav-Bar */
+
+  .nav-bar {
+    display: none;
+  }
+
+  /* AboutMe.js */
+
+  .carousel {
+    transform: rotate(90deg) translateY(-8rem) translateX(-3rem);
+  }
+
+  .about-me-content {
+    background: none;
+  }
+
+  .about-me-hex-left {
+    background: none;
+  }
+
+  .about-me-content {
+    transform: translateY(1rem) translateX(0rem);
+  }
+
+  .about-me-content-text {
+  transform: translateY(0rem) translateX(0rem);
+  overflow: hidden;
+  width: 94vw;
+  }
+
+  .about-me-title {
+  transform: translateY(-68rem) translateX(0rem) rotate(0deg);
+  width: 20rem;
+  float: left;
+  margin: 0 0 0 1rem;
+  }
+
+  .about-me-hex-left-right {
+    display: none;
+  }
+
+  /* The Plans */
+
+  #plans-section {
+    display: none;
+  }
+
+  /* Contact */
+
+ #contact {
+  display: none;
+ }
+
+ /* Footer */
+
+ #footer {
+  display: none;
+ }
+
+}

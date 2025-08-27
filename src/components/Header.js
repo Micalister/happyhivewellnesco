@@ -4,6 +4,7 @@ import '.././App.css';
 import Logo from '.././assets/logo.svg';
 import Hero from '.././assets/hero.svg';
 import Bubble1 from '.././assets/chat-bubble1.svg';
+import Bubble2 from '.././assets/chat-bubble2.svg';
 import HeroBee from '.././assets/HeroBee.svg';
 import Arrow from '.././assets/Arrow.svg';
 
@@ -43,7 +44,7 @@ function Header() {
 
             {/*Call to Action Button*/}
             <div>
-                 <a href="#plans-section"><Button className={isActive ? 'golden-right-active' : 'golden-right'} text="Let's Work!" onClick={handleClick1}/></a>
+                 <Button className={isActive ? 'golden-right-active' : 'golden-right'} text="Let's Work!" onClick={handleClick1}/>
             </div>
 
             {/*Header Content*/}
@@ -53,6 +54,7 @@ function Header() {
                 </div>
                 <div className="hero-text-container">
                     <img className="chat-bubble1" src={Bubble1} alt="chat-bubble1"></img>
+                    <img className="chat-bubble2" src={Bubble2} alt="chat-bubble2"></img>
                     <HeroTypeWritter/>
                 </div>
             <img className="HeroBee" src={HeroBee} alt="side bee"/>
