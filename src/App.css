@@ -324,6 +324,7 @@ button {
   align-items: center;
   float: right;
   transform: translateY(10rem) translateX(40rem);
+  z-index: 10000;
 }
 
 .arrow-up {
@@ -739,7 +740,14 @@ button {
   /* AboutMe.js */
 
   .carousel {
-    transform: rotate(90deg) translateY(-8rem) translateX(-3rem);
+   position: absolute;
+   transform: translateY(-8rem) translateX(10rem) rotate(90deg);
+   z-index: 10000;
+  }
+
+  .carousel-hex {
+    transform: rotate(90deg);
+    margin: 0.5rem 0 0.5rem 0;
   }
 
   .about-me-content {
@@ -751,30 +759,46 @@ button {
   }
 
   .about-me-content {
-    transform: translateY(1rem) translateX(0rem);
+    transform: translateY(0rem) translateX(0rem);
   }
 
   .about-me-content-text {
   transform: translateY(0rem) translateX(0rem);
   overflow: hidden;
   width: 94vw;
+  margin: 1rem 1rem 20rem 1rem;
   }
 
   .about-me-title {
-  transform: translateY(-68rem) translateX(0rem) rotate(0deg);
+  transform: translateY(-76rem) translateX(0rem) rotate(0deg);
   width: 20rem;
   float: left;
   margin: 0 0 0 1rem;
   }
 
   .about-me-hex-left-right {
-    display: none;
+    right: 0rem;
+    width: 100vw;
+    height: 100vh;
+    background: url(./assets/AboutToPlansMobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(1) translateY(18rem);
   }
+
+  .aboutcapressa {
+  transform: translateY(-14rem) translateX(20rem);
+  width: 20rem;
+}
 
   /* The Plans */
 
   #plans-section {
     display: none;
+  }
+
+  .plans-title {
+
   }
 
   /* Contact */

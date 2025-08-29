@@ -106,11 +106,11 @@ function Carousel() {
 
      </div>
      <div className={activeIndex === 1 ? 'test-act' : 'test-inc'}>
-                <div className="">
-                    <p>content 2</p>
+                <div className="about-me-content">
+                    <p className="about-me-content-text">content 2</p>
                 </div>
                 <div>
-                    <h1 className="">Before & After</h1>
+                    <h1 className="about-me-title">Before & After</h1>
                 </div>
      </div>
     
