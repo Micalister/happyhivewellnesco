@@ -49,7 +49,6 @@ button {
   background: url('./assets/button-background.svg');
   border: 1px solid var(--secondary-color);
   color: transparent;
-  font-weight: 500;
   float: right;
   transform: translateY(42rem) translateX(-34rem);
   z-index: 1;
@@ -556,9 +555,172 @@ button {
   height: 95rem;
   background-color: #fff;
   border: 0.5rem solid var(--main-color);
+  text-align: center;
+  transform: translateY(99rem);
+ }
+
+ .contact-card h1 {
+  color: var(--main-color);
+  font-size: 12rem;;
+ }
+
+ .contact-card h4 {
+  color: var(--main-color);
+  font-family: var(--header-font);
+  font-size: 2.5rem;
+  font-weight: 400;
+ }
+
+ form {
   display: flex;
   justify-content: center;
-  transform: translateY(99rem);
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+ }
+
+ .contact-card h1 {
+  color: var(--main-color);
+ }
+
+ form input {
+  margin-top: 1rem;
+  border: 0.2rem solid var(--main-color);
+  padding: 1.4rem;
+  width: 90%;
+  font-size: var(--text-size);
+  font-family: var(--text-font);
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  margin-bottom: 3rem;
+ }
+
+ form input::placeholder {
+  color: var(--main-color);
+ }
+
+ form textarea {
+  margin-top: 1rem;
+  border: 0.2rem solid var(--main-color);
+  padding: 1.4rem;
+  width: 70%;
+  font-size: var(--text-size);
+  font-family: var(--text-font);
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  resize: none;
+  height: 14rem;
+  transform: translateX(-4.3rem);
+  padding-right: 10rem;
+ }
+
+ form textarea::placeholder {
+  color: var(--main-color);
+ }
+
+ .contact-hex {
+  position: absolute;
+  width: 7.7rem;
+ }
+
+ .contact-hex-a {
+  transform: translateY(-24.25rem) translateX(38.5rem);
+ }
+ .contact-hex-b {
+  transform: translateY(-14rem) translateX(38.5rem);
+ }
+ .contact-hex-c {
+  transform: translateY(-3.75rem) translateX(38.5rem);
+ }
+
+ .contact-hex-message {
+  position: absolute;
+  transform: translateY(11.978rem) translateX(32rem);
+  width: 20.3rem;
+ }
+
+ /* Contact Button */
+
+ .submit-left {
+  background: url('./assets/button-background.svg');
+  border: 1px solid var(--main-color);
+  color: transparent;
+  transform: translateY(10rem) translateX(0rem);
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  transition: transform .5s ease;
+  width: 24.5rem;
+ }
+
+ .submit-left::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24.5rem;
+  height: 7.8rem;
+  border: 0.1rem solid var(--main-color);
+  transform: translateY(-3rem) translateX(0rem);
+  z-index: -10;
+  overflow: hidden; 
+  transition: transform .5s ease;
+}
+
+ .submit-left::after {
+  content: "SUBMIT!";
+  color: var(--secondary-color);
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 24.5rem;
+  /*height: 7.8rem;*/
+  padding: 1.5rem 0rem 1.5rem 0rem;
+  background-color: var(--main-color);
+  border: 0.1rem solid var(--secondary-color);
+  transform: translateY(-9rem) translateX(1rem);
+  z-index: -2;
+  transition: transform .5s ease;
+}
+ 
+.submit-left-active {
+  background: url('./assets/button-background.svg');
+  border: 1px solid var(--main-color);
+  color: transparent;
+  transform: translateY(10rem) translateX(0rem);
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  transition: transform .5s ease;
+  width: 24.5rem;
+ }
+
+ .submit-left-active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24.5rem;
+  height: 7.8rem;
+  border: 0.1rem solid var(--main-color);
+  transform: translateY(-1.8rem) translateX(-1rem);
+  z-index: -10;
+  overflow: hidden; 
+  transition: transform .5s ease;
+}
+
+ .submit-left-active::after {
+  content: "SUBMIT!";
+  color: var(--secondary-color);
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 24.5rem;
+  /*height: 7.8rem;*/
+  padding: 1.7rem 0rem 1.7rem 0rem;
+  background-color: var(--main-color);
+  border: 0.1rem solid var(--main-color);
+  transform: translateY(-6.1rem) translateX(-1.1rem);
+  z-index: -2;
+  transition: transform .5s ease;
  }
 
  /* Footer */
