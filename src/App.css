@@ -761,6 +761,131 @@ button {
   height: 47rem;
  }
 
+ .footer-card-left {
+
+ }
+
+ .link-icon {
+  position: relative;
+  float: right;
+  margin: 1rem;
+ }
+
+.footer-card-left-links {
+  display: flex;
+  gap: 2rem;
+  margin: 7rem 2rem;
+  cursor: pointer;
+}
+
+.footer-card-left-links p {
+  color: var(--main-color);
+  text-decoration: underline;
+  transform: translateY(0.5rem);
+  font-size: var(--button-text);
+  font-family: var(--header-font);
+}
+
+ .footer-card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+ }
+
+ .footer-card-right h4 {
+  font-size: var(--button-text);
+  font-family: var(--header-font);
+  font-weight: 400;
+  padding: 1rem 0.5rem;
+ }
+
+ .footer-card-right p {
+  padding: 0 0.5rem;
+  font-size: 2rem;
+ }
+
+/* FOOTER BUTTON */
+
+.golden-left {
+  background: url('./assets/button-background.svg');
+  border: 1px solid var(--secondary-color);
+  color: transparent;
+  transform: translateY(25rem) translateX(-6rem);
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  transition: transform .5s ease;
+}
+
+.golden-left::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24.5rem;
+  height: 7.8rem;
+  border: 0.1rem solid var(--secondary-color);
+  transform: translateY(-3.5rem) translateX(1rem);
+  z-index: -10;
+  overflow: hidden; 
+  transition: transform .5s ease;
+}
+
+.golden-left::after {
+  content: "To The Top!";
+  color: var(--main-color);
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 24.5rem;
+  /*height: 7.8rem;*/
+  padding: 1.5rem 0rem 1.5rem 0rem;
+  background-color: #FEF587;
+  border: 0.1rem solid var(--secondary-color);
+  transform: translateY(-9.2rem) translateX(3rem);
+  z-index: -2;
+  transition: transform .5s ease;
+}
+
+.golden-left-active {
+  background: url('./assets/button-background.svg');
+  border: 1px solid var(--secondary-color);
+  color: transparent;
+  font-weight: 500;
+  transform: translateY(25rem) translateX(-6rem);
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+  transition: transform .5s ease;
+}
+
+.golden-left-active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24.5rem;
+  height: 7.8rem;
+  border: 0.1rem solid var(--secondary-color);
+  transform: translateY(-1.8rem) translateX(-1.25rem);
+  z-index: -10;
+  overflow: hidden; 
+  transition: transform .5s ease;
+}
+
+.golden-left-active::after {
+  content: "TO THE TOP!";
+  color: var(--main-color);
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 24.5rem;
+  padding: 1.8rem 0.5rem 1.8rem 0.5rem;
+  background-color: var(--secondary-color);
+  border: 0.1rem solid var(--secondary-color);
+  transform: translateY(-6.2rem) translateX(-1.2rem);
+  
+  transition: transform .5s ease;
+}
+
  /**********************************************************/
  /* Media Queries */
 
