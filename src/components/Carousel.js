@@ -95,24 +95,30 @@ function Carousel() {
         </svg>
       </button>
     </div>
-    <div className={activeIndex === 0 ? 'test-act' : 'test-inc'}>
-                {/*<img src={aboutmebubble} alt="about me speech bubble"></img>*/}
-                <div className="about-me-content">
-                    <p className="about-me-content-text">My journey hasn’t been a straight path. In high school, I was active in cheer and dance but had no idea how to eat healthy. I was a vegetarian living off pasta and sugar, and while my teenage metabolism and active lifestyle kept me at a healthy weight, those habits caught up with me in college. Between working multiple jobs, school, and stress eating, I gained 52 pounds by the time I graduated.<br></br> In 2019, I decided to make a change. I focused on building better habits, like consistent exercise and mindful eating, instead of chasing quick fixes. Over time, I lost 35 pounds and fell in love with bodybuilding, earning first place and professional athlete status in my first WBFF competition. But I realized that extreme competition prep wasn’t sustainable—it left me burned out, struggling with food guilt, and resenting the gym.</p>
-                </div>
-                <div>
-                    <h1 className="about-me-title">About Capressa</h1>
-                </div>
 
-     </div>
-     <div className={activeIndex === 1 ? 'test-act' : 'test-inc'}>
-                <div className="about-me-content">
-                    <p className="about-me-content-text">content 2</p>
-                </div>
-                <div>
-                    <h1 className="about-me-title">Before & After</h1>
-                </div>
-     </div>
+    
+      <div className={activeIndex === 0 ? 'about-me-swap' : 'before-and-after-swap'}>
+                  {/*<img src={aboutmebubble} alt="about me speech bubble"></img>*/}
+                  <div>
+                      <h1 className="about-me-title">About Capressa</h1>
+                  </div>
+                  <div className="about-me-content">
+                      <p className="about-me-content-text">My journey hasn’t been a straight path. In high school, I was active in cheer and dance but had no idea how to eat healthy. I was a vegetarian living off pasta and sugar, and while my teenage metabolism and active lifestyle kept me at a healthy weight, those habits caught up with me in college. Between working multiple jobs, school, and stress eating, I gained 52 pounds by the time I graduated.<br></br> In 2019, I decided to make a change. I focused on building better habits, like consistent exercise and mindful eating, instead of chasing quick fixes. Over time, I lost 35 pounds and fell in love with bodybuilding, earning first place and professional athlete status in my first WBFF competition. But I realized that extreme competition prep wasn’t sustainable—it left me burned out, struggling with food guilt, and resenting the gym.</p>
+                  </div>
+                  
+
+      </div>
+      <div className={activeIndex === 1 ? 'about-me-swap' : 'before-and-after-swap'}>
+                  <div>
+                      <h1 className="before-and-after-title">Before & After</h1>
+                  </div>
+                  <div className="before-and-after-content">
+                      <p className="before-and-after-text">content 2</p>
+                  </div>
+                  
+      </div>
+    
+
     
     </div>
   );

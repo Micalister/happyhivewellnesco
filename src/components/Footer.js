@@ -16,7 +16,9 @@ function Footer() {
         /* onClick Statements */
         const handleClick1 = () => {
             setIsActive(prevState => !prevState); // Toggle the state immediately
+            window.location.hash = '#home';
         setTimeout(() => {
+            window.history.replaceState(null, null, window.location.pathname); //resets button for reuse
             setIsActive(prevState => !prevState); // Toggle it back after 1 second
         }, 1000);
         };
@@ -32,6 +34,10 @@ function Footer() {
                     <div className="footer-card footer-card-left">
                         <img src={LinkIcon} className="link-icon" alt="Extra Links Icon"/>
                         <div>
+                            <a href="#tra" className="footer-card-left-links">
+                                <img src={TraIcon} alt="ABC Trainerize Logo"/>
+                                <p>Trainerize</p>
+                            </a>
                             <a href="#instagram" className="footer-card-left-links">
                                 <img src={InstaIcon} alt="Instagram Logo"/>
                                 <p>Instagram</p>
@@ -39,10 +45,6 @@ function Footer() {
                             <a href="#amazon" className="footer-card-left-links">
                                 <img src={AmzIcon} alt="Amazon Logo"/>
                                 <p>Amazon Store</p>
-                            </a>
-                            <a href="#tra" className="footer-card-left-links">
-                                <img src={TraIcon} alt="ABC Trainerize Logo"/>
-                                <p>Trainerize</p>
                             </a>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '.././App.css';
+import NavBar from './NavBar.js';
 /* SVG assets */
 import Logo from '.././assets/logo.svg';
 import Hero from '.././assets/hero.svg';
@@ -19,7 +20,9 @@ function Header() {
     /* onClick Statements */
     const handleClick1 = () => {
         setIsActive(prevState => !prevState); // Toggle the state immediately
+        window.location.hash = '#plans-section';
     setTimeout(() => {
+        window.history.replaceState(null, null, window.location.pathname); //resets button for reuse
         setIsActive(prevState => !prevState); // Toggle it back after 1 second
     }, 1000);
     };
@@ -29,22 +32,11 @@ function Header() {
             {/*Header and Logo*/}
             <h1 className="header-title">Habit Hive Wellness Co.</h1>
             <img src={Logo} alt="Happy Hive Wellness Co. Logo" className="logo header-logo"></img>
-            
-            {/*NavBar*/}
-            <div>
-                <nav className="nav-bar">
-                    <ul className="unordered-nav-li">
-                        <li><a className="nav-list-item" href="#home" id="home-active">HOME</a></li>
-                        <li><a className="nav-list-item" href="#about-me">ABOUT ME</a></li>
-                        <li><a className="nav-list-item" href="#plans">PLANS</a></li>
-                        <li><a className="nav-list-item" href="#contact">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <NavBar></NavBar>
 
             {/*Call to Action Button*/}
             <div>
-                 <Button className={isActive ? 'golden-right-active' : 'golden-right'} text="Let's Work!" onClick={handleClick1}/>
+                 <Button className={isActive ? 'golden-right-active' : 'golden-right'} text="Let's Work!" onClick={handleClick1} src="#plans-section"/>
             </div>
 
             {/*Header Content*/}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '.././App.css';
 import PlansBee from '.././assets/plans-bee.svg';
 import PlansArrow from '.././assets/Arrow.svg';
@@ -6,10 +6,30 @@ import PlansBackground from '.././assets/the-plans-background.svg';
 import BusyBee from '.././assets/busy-bee.svg';
 import BeeStrong from '.././assets/bee-strong.svg';
 import QueenBee from '.././assets/queen-bee.svg';
+import BusyBeeActive from '.././assets/busy-bee-active.svg';
+import BeeStrongActive from '.././assets/bee-strong-active.svg';
+import QueenBeeActive from '.././assets/queen-bee-active.svg';
+import ClosePlansButton from '.././assets/close-plans-button.svg'
+
 
 function Plans() {
+
+        const [isActive, setIsActive] = useState(false);
+    
+        /* onClick Statements */
+        const handleClick1 = () => {
+            setIsActive(prevState => !prevState); // Toggle the state immediately
+            window.location.hash = '#plans-section';
+
+            setTimeout(() => {
+            window.history.replaceState(null, null, window.location.pathname); //resets button for reuse
+        }, 1000);
+        };
+
+
     return (
         <div id="plans-section">
+        <div className={isActive ? 'plans-mobile-inactive' : 'plans-mobile-active'}>
             <img src={PlansBackground} alt="plans section background art" className="plans-background"/>
             <h1 className="plans-title">The Plans</h1>
             <img src={PlansBee} alt="little bee" className="plans-bee"/>
@@ -20,20 +40,116 @@ function Plans() {
                     <div className="bee-background plans-bump"><img src={BusyBee} alt="testing" className="bee-icon"/></div>
                     <h3>Busy Bee DIY</h3>
                     <p className="plans-text">a self-paced 4-week fitness program designed for busy women who want structure without the pressure of traditional check-ins. You’ll get access to effective, easy-to-follow workouts, weekly mindset prompts, and simple nutrition guidance—all delivered right in the app. You’ll also have access to in-app messaging for questions or support as needed. No calls, no pressure—just a flexible plan to help you build consistency on your own terms</p>
-                    <button className="plans-button">click here bestie!</button>
+                    
+                        <div className="plans-button-decoration"></div><button className="plans-button" onClick={handleClick1}>Learn More!</button>
+                    
                 </div>
                 <div className="plans-container-child plans-container-child-b">
                     <div  className="bee-background plans-bump"><img src={BeeStrong} alt="testing" className="bee-icon"/></div>
                     <h3>Bee Strong Challenge</h3>
                     <p className="plans-text">an 8-week program designed to help you build sustainable fitness habits, increase strength, and boost your overall well-being. Through a combination of mindful movement, nutrition education, and mindset practices, you’ll develop the tools and confidence to achieve lasting progress. This challenge is focused on consistency over perfection and celebrates every small victory along the way. Let’s get stronger, together!</p>
-                    <button className="plans-button">click here bestie!</button>
+                    
+                        <div className="plans-button-decoration"></div><button className="plans-button" onClick={handleClick1}>Learn More!</button>
+                    
                 </div>
                 <div className="plans-container-child plans-container-child-c">
                     <div  className="bee-background plans-bump"><img src={QueenBee} alt="testing" className="bee-icon"/></div>
                     <h3>Queen Bee</h3>
                     <p className="plans-text">the ultimate coaching experience for women ready to fully commit to their fitness and wellness journey. This ongoing, month-to-month plan includes fully customized workouts, macro-based nutrition guidance, weekly mindset check-ins, and personalized support. You’ll have full app access and direct communication for feedback, motivation, and accountability—this is your space to grow, thrive, and take the lead in your health.</p>
-                    <button className="plans-button">click here bestie!</button>
+                    
+                        <div className="plans-button-decoration"></div><button className="plans-button" onClick={handleClick1}>Learn More!</button>
+                    
                 </div>
+            </div>
+        </div>
+
+            <div className={isActive ? 'plans-comparison-container-active' : 'plans-comparison-container-inactive'}>
+
+                <button className="close-plans-container" onClick={handleClick1}><img src={ClosePlansButton} alt="button" /></button>
+                
+                <div className="plans-comparison-chart">
+                    <div className="info-chart">
+                        <ul className="info-chart-categories">
+                            <li>Plan</li>
+                            <li>Plan Duration</li>
+                            <li>Goal-Specific Progress</li>
+                            <li>Personalized Workouts</li>
+                            <li>Trainerize App Access</li>
+                            <li>Habit Tracking</li>
+                            <li>Community Support Chat</li>
+                            <li>Custom Macro Guide</li>
+                            <li>Meal Idea Guide</li>
+                            <li>Mental Health Int</li>
+                            <li>Check-Ins</li>
+                            <li>Price</li>
+                        </ul>
+                    </div>
+
+                    <div className="plans-chart">
+                        <div className="active-plans-bee-icon-background"><img src={BusyBeeActive} alt="filler" className="active-plans-bee-icon busy-bee-small"/></div>
+                        <ul className="plans-chart-categories">
+                            <li>Busy Bee DIY</li>
+                            <li>4 Weeks</li>
+                            <li>Pre-Set Workout Structure</li>
+                            <li>No</li>
+                            <li>Yes</li>
+                            <li>Yes</li>
+                            <li>Yes</li>
+                            <li>Yes</li>
+                            <li>Yes</li>
+                            <li>Limited</li>
+                            <li>In-App Messaging</li>
+                            <li>$75-$100</li>
+                        </ul>
+                        <div className="plan-selection-button-decoration"></div><a href="#plan" className="plan-selection-button">Select!</a>
+                    </div>
+
+                    <div className="first-plans-divide"></div>
+
+                    <div className="plans-chart">
+                        <div className="active-plans-bee-icon-background"><img src={BeeStrongActive} alt="filler" className="active-plans-bee-icon"/></div>
+                        <ul className="plans-chart-categories">
+                            <li>Bee Strong Challenge</li>
+                            <li>8 Weeks</li>
+                            <li>Challenge Focused</li>
+                            <li>Limited</li>
+                            <li>Yes</li>
+                            <li>Yes</li>
+                            <li>Yes</li>
+                            <li>Yes</li>
+                            <li>Yes</li>
+                            <li>Weekly Themes</li>
+                            <li>Bi-Weekly 1:1</li>
+                            <li>$200-$225</li>
+                        </ul>
+                        <div className="plan-selection-button-decoration"></div><a href="#plan" className="plan-selection-button">Select!</a>
+                    </div>
+
+                    <div className="second-plans-divide"></div>
+
+                    <div className="plans-chart">
+                        <div className="active-plans-bee-icon-background"><img src={QueenBeeActive} alt="testing" className="active-plans-bee-icon"/></div>
+                        <ul className="plans-chart-categories">
+                            <li>Queen Bee</li>
+                            <li>Ongoing (Monthly)</li>
+                            <li>Adapted to evolving goals</li>
+                            <li>Yes</li>
+                            <li>Yes</li>
+                            <li>Yes</li>
+                            <li>Yes</li>
+                            <li>Yes</li>
+                            <li>Yes</li>
+                            <li>Customized</li>
+                            <li>Weekly 1:1</li>
+                            <li>$150/Month or $400 for 3 months</li>
+                        </ul>
+                        <div className="plan-selection-button-decoration"></div><a href="#plan" className="plan-selection-button">Select!</a>
+                    </div>
+
+                    <button className="mobile-plans-close-button" onClick={handleClick1}>Back!</button>
+
+                </div>
+                
             </div>
             
            

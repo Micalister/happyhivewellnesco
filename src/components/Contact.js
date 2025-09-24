@@ -20,7 +20,7 @@ function Contact() {
     return(
         <div id="contact">
             <img src={ContactBackground} className="contact-background" alt="contact section background"/>
-            <div className="contact-card">
+            <div className="contact-card" id="contact-form">
                 <h1>Let's Connect</h1>
                 <h4>Tell me your goals and what plan best fits your needs!</h4>
 

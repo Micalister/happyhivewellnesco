@@ -7,14 +7,14 @@ import aboutcapressa from '.././assets/aboutcapressa.svg';
 
 function AboutMe() {
     return (
-        <div>
+        <div id="about-me">
             <div className="about-me-hex-left">
             <Carousel/>
             </div>
             {/*<img className="about-me-hex-left" src={AboutMeLeft} alt="background Hexagons"></img>*/}
 
             {/*<img src={AboutToPlans} className="about-me-hex-right" alt="background Hexagons"></img>*/}
-            <div className="about-me-hex-left-right">
+            <div className="about-me-hex-right">
                 <img className="aboutcapressa" src={aboutcapressa} alt="Capressa explaining her about me section"></img>
             </div>
         </div>        

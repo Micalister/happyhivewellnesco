@@ -11,8 +11,10 @@ function App() {
     <div className="app-wrapper">
      <Header></Header>
      <AboutMe></AboutMe>
-     <Plans></Plans>
-     <Contact></Contact>
+     <div className="mobile-plans-to-contact-background">
+      <Plans></Plans>
+      <Contact></Contact>
+     </div>
      <Footer></Footer>
     </div>
   );
